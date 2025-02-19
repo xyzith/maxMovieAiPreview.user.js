@@ -1,11 +1,12 @@
 // ==UserScript==
-// @name		 Max Movie AI Preview
-// @namespace	 http://github.com/xyzith/maxAiPreview
-// @version		 2025-2-19
-// @description  Add a felo ai preview btn to Max movie page
-// @author		 You
-// @match		 https://play.max.com/*
-// @grant		 none
+// @name  Max Movie AI Preview
+// @namespace http://github.com/xyzith/maxAiPreview
+// @version 2025-2-19
+// @description Add a felo ai preview btn to Max movie page
+// @author  You
+// @updateURL https://github.com/xyzith/maxMovieAiPreview.user.js/blob/master/maxAiPreview.user.js
+// @match https://play.max.com/*
+// @grant none
 // ==/UserScript==
 //
 
