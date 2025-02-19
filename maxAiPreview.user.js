@@ -15,8 +15,6 @@
 
   const addFeloButton = () => {
 
-    const movieName = document.title.replace(/ • Max$/, '').trim();
-
     const buttonSection = document.querySelector('[class^="StyledButtonRowWrapper"]');
     const buttonRow = buttonSection?.children[1];
 
@@ -37,7 +35,8 @@
     text.style.fontSize = 'var(--font_body_sm_bp_01_font_size, 11px)'
 
     aiButton.addEventListener('click', () => {
-      const query = encodeURIComponent(`${movieName} 這部電影在演什麼?IMDb和爛番茄評價如何?請用中文回答。`);
+      const movieName = document.title.replace(/ • Max$/, '').trim();
+      const query = encodeURIComponent(`<<${movieName}>> 這部電影在演什麼?IMDb和爛番茄評價如何?請用中文回答。`);
       const url = `https://felo.ai/search/?q=${query}`;
       window.open(url, '_blank');
     })
