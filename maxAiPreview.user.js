@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name  Max Movie AI Preview
 // @namespace http://github.com/xyzith/maxAiPreview
-// @version 2025-2-19
+// @version 2025-2-24
 // @description Add a felo ai preview btn to Max movie page
 // @author  You
 // @updateURL https://github.com/xyzith/maxMovieAiPreview.user.js/blob/master/maxAiPreview.user.js
@@ -37,7 +37,7 @@
 
     aiButton.addEventListener('click', () => {
       const movieName = document.title.replace(/ • Max$/, '').trim();
-      const query = encodeURIComponent(`<<${movieName}>> 這部電影在演什麼?IMDb和爛番茄評價如何?請用中文回答。`);
+      const query = encodeURIComponent(`<<${movieName}>> What is this movie about? How are the ratings on IMDb and Rotten Tomatoes?`);
       const url = `https://felo.ai/search/?q=${query}`;
       window.open(url, '_blank');
     })
